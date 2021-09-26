@@ -233,6 +233,9 @@ const Container = styled.div`
     border: 2px solid #141414;
     background-color: #141414;
   }
+  .projects-heading {
+    color: rgba(255, 255, 255, 0.85);
+  }
   @media screen and (min-width: 3840px) {
     .projects-heading {
       font-size: 40px;

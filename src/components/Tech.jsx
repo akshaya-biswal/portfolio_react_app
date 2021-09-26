@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Card } from "antd";
 import styled from "styled-components";
 
 const Tech = () => {
@@ -35,7 +35,9 @@ const Tech = () => {
               In the process of learning new things, I have picked up quite a
               wide variety of skills.
             </p>
-            <p className="techiknow-third">My best skills include:</p>
+            <p className="techiknow-third">
+              I have become confident using the following technologies:
+            </p>
           </div>
         </Col>
         <Col xxl={3} xl={3} lg={3} xs={2} md={3} sm={3} />
@@ -129,9 +131,42 @@ const Tech = () => {
         </Col>
         <Col xs={2} />
       </Row>
+      <Row>
+        <Col xxl={5} xl={5} lg={4} xs={2} md={3} sm={3} />
+        <Col
+          xxl={14}
+          xl={14}
+          lg={17}
+          xs={20}
+          md={18}
+          sm={18}
+          style={{
+            textAlign: "left",
+          }}
+        >
+          <Card className="abcd">
+            <Img src="/images/javascript.svg" alt="" />
+            <Img src="/images/react.png" alt="" />
+            <Img src="/images/redux.svg" alt="" style={{ marginRight: 10 }} />
+            <Img src="/images/nodejs.svg" alt="" />
+            <Img src="/images/html5.svg" alt="" />
+            <Img src="/images/css3.svg" alt="" />
+            <Img src="/images/sass.svg" alt="" />
+            <Img src="/images/bootstrap.svg" alt="" />
+            <Img src="/images/git.svg" alt="" />
+          </Card>
+        </Col>
+        <Col xxl={5} xl={5} lg={4} xs={2} md={3} sm={3} />
+      </Row>
     </Container>
   );
 };
+
+const Img = styled.img`
+  width: 100px;
+  height: auto;
+  max-height: 100px;
+`;
 
 const Container = styled.div`
   .techiknow-heading {
@@ -223,6 +258,10 @@ const Container = styled.div`
       font-size: 14px;
       margin-top: -10px;
     }
+  }
+  .ant-card,
+  .ant-card-body {
+    border: none;
   }
 `;
 

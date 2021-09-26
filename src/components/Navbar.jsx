@@ -14,7 +14,7 @@ const Navbar = () => {
             <Col xs={1} sm={1} md={2} lg={2} xl={2} />
             <Col xs={22} sm={22} md={20} lg={20} xl={20}>
               <a href="/">
-                <Img src="/images/logo.png" alt="logo" />
+                <Img src="/images/logo.svg" alt="logo" />
               </a>
               <Menu
                 mode="horizontal"
@@ -100,8 +100,9 @@ const Navbar = () => {
 };
 
 const Img = styled.img`
-  width: 100%;
+  width: auto;
   max-width: 100px;
+  height: 60px;
 `;
 
 const Container = styled.div`
