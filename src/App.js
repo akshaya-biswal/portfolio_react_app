@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
+import Experience from "./components/Experience";
 
 const App = () => (
   <div className="App">
@@ -11,6 +12,7 @@ const App = () => (
     <Landing />
     <AboutMe />
     <Tech />
+    <Experience />
   </div>
 );
 
