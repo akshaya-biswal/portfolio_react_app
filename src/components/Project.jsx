@@ -29,7 +29,14 @@ const Project = () => {
           </h1>
         </Col>
       </Row>
-      <Row style={{ marginTop: "13px" }}>
+      <p
+        style={{
+          color: "rgb(168, 164, 164)",
+        }}
+      >
+        Coming soon ....
+      </p>
+      {/* <Row style={{ marginTop: "13px" }}>
         <Col xxl={3} xl={3} lg={4} xs={2} md={3} sm={3} />
         <Col xxl={6} xl={6} lg={16} xs={20} md={18} sm={18}>
           <Card
@@ -211,7 +218,7 @@ const Project = () => {
           </Card>
         </Col>
         <Col xxl={3} xl={3} lg={3} xs={2} md={3} sm={3} />
-      </Row>
+      </Row> */}
     </Container>
   );
 };
